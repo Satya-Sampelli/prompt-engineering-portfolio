@@ -103,13 +103,13 @@ Protect Your Planet. Power Your Pace.
 | Version | Prompt | What Changed | Why This Improved the Output |
 | :--- | :--- | :--- | :--- |
 | **V1** | *See initial prompts above.* | N/A | N/A |
-| **V2** | *See refined prompts above.* | Added clear role assignments, defined target personas, and stripped abstract jargon requirements. | Forcing a persona changed the baseline vocabulary, removing cold computer logic terms and corporate generic structures. |
+| **V2** | *See refined prompts above.* | Added clear role assignments, defined target personas, and removed abstract jargon requirements. | Forcing a persona changed the baseline vocabulary, removing cold computer logic terms and corporate generic structures. |
 | **V3** | *See final prompts above.* | Enforced explicit structural constraints (word counts, alliteration, specific analogies). | Concrete boundaries forced the model to prioritize concise messaging and strategic linguistic patterns over generic summaries. |
 
 ---
 
 1.3 Role and Context Analysis
-Integrating explicit role assignment and background context drastically changed the sophistication of the generated text. In Scenario A, assigning the persona of an "elementary teacher" immediately adjusted the language baseline from technical computer science mechanics to highly digestible concepts. In Scenario B, adding the specific "Graduate Engineer Trainee" career context changed a weak, casual refusal into a sophisticated corporate communication asset. Ultimately, supplying persona and context removes statistical ambiguity from the LLM, guiding its generative path toward precise vocabulary, tone guidelines, and stylistic constraints.
+Integrating explicit role assignment and background context drastically changed the sophistication of the generated text. In Scenario A, assigning the persona of an "primary teacher" immediately adjusted the language baseline from technical computer science mechanics to highly digestible concepts. In Scenario B, adding the specific "Graduate Engineer Trainee" career context changed a weak, casual refusal into a sophisticated corporate communication asset. Ultimately, supplying persona and context removes statistical ambiguity from the LLM, guiding its generative path toward precise vocabulary, tone guidelines, and stylistic constraints.
 
 
 
@@ -139,7 +139,7 @@ Comparison Table of Outputs
 
 
 2.2 Analysis & Recommendations
-Low temperature settings are ideal for data extraction, technical code generation, and answering factual questions where accuracy is paramount and hallucinations must be suppressed. Conversely, high temperature settings excel during creative brainstorming sessions, abstract design ideation, and writing engaging marketing hooks where predictability feels stale. For this narrative generation task, the **Medium Temperature** setting worked best because it blended rich, evocative atmospheric world-building with logical narrative cohesion. It felt mysterious without becoming overly dramatic or structurally loose, which can happen at higher temperatures.
+Low temperature settings are ideal for data extraction, technical code generation, and answering factual questions where accuracy is most important and hallucinations must not  be tolerated. Conversely, high temperature settings excel usually during creative brainstorming sessions, abstract design ideation, and writing engaging marketing hooks where predictability sounds boring. For this narrative generation task, the Medium Temperature setting worked best because it blended rich, evocative atmospheric world-building with logical narrative cohesion. It felt mysterious without becoming too dramatic or structurally loose, which can happen at higher temperatures.
 1. When would you use a low temperature setting?
 You should use a low temperature setting (0.0 to 0.3) when you need the model's output to be highly deterministic, predictable, and factual. Lowering the temperature forces the model to choose the most statistically likely words, which minimizes creativity and drastically reduces the chances of fabrication.
 
@@ -272,9 +272,9 @@ Step 3: Analysis
 | Review  | Zero-Shot Result | Few-Shot Result | Correct Label | Improved? |
 | :--- | :--- | :--- | :--- | :--- |
 | **1** | Negative | Negative | Negative | No (Correct in both) |
-| **2** | Positive | Neutral | Neutral | **Yes** (Zero-shot missed nuance) |
+| **2** | Positive | Neutral | Neutral | Yes (Zero-shot missed nuance) |
 | **3** | Positive | Positive | Positive | No (Correct in both) |
-| **4** | Negative | Neutral | Neutral | **Yes** (Zero-shot misread mild critique) |
+| **4** | Negative | Neutral | Neutral | Yes (Zero-shot misread mild critique) |
 | **5** | Negative | Negative | Negative | No (Correct in both) |
 
 Few-shot prompting is most useful when dealing with subjective classifications, specific formatting demands, or subtle textual nuances that a model might misinterpret without context guidelines. It acts as an instant contextual anchor, teaching the LLM operational boundaries, structural limits, and vocabulary restrictions without needing to undergo costly fine-tuning or weight adjustments.
